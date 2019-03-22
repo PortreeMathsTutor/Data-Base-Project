@@ -1,0 +1,23 @@
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+// I put this on the button attached to the canvas in scene 1
+public class DestroyIfOnSceneTwo : MonoBehaviour
+{
+    public int y = 0;
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        y = SceneManager.GetActiveScene().buildIndex;
+
+
+        if (y != 0)
+        { Destroy(gameObject); }
+        }
+}
