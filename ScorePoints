@@ -1,0 +1,26 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+//I put this on the canvas in scene 1
+public class ScorePoints : MonoBehaviour
+{
+
+    public static int score = 0;
+    private int y = 0;
+    public void IfClicked()
+    {
+        {
+            y = SceneManager.GetActiveScene().buildIndex;
+            if (y != 0)
+            {
+                score = -100;
+            }
+            score = score + 100;
+        }
+
+
+    }
+}
+    
