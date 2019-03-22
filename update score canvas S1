@@ -1,0 +1,30 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+// I put this on the score text attached to the canvas in scene 1
+
+public class AddToScoreText : MonoBehaviour
+{
+    public int y = 0;
+    public float score; // in the other script the variable score will 
+                        // be defined          public static int score;
+                        // using the word static means the variable can be accessed else where.
+
+    public Text score1;
+
+
+    // Update is called once per frame
+    void Update()
+    { y = SceneManager.GetActiveScene().buildIndex;
+
+
+        if (y == 0)
+        {
+            score = ScorePoints.score; // We need to acces the score value that is stored in a different script.
+            score1.text = score.ToString("0") + " points";
+        }
+    }
+}
