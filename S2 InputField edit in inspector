@@ -1,0 +1,9 @@
+Drag the ScoreboardManager into 
+OnValue Changed (String)
+choose
+UiController.OnUsernameEdit/SubmitAndLoadScores
+
+Drag the ScoreboardManager into 
+On End Edit (String)
+choose
+SubmitAndLoadScores.SubmitScoreAndNameToOnlineDataBase/SubmitAndLoadScores
