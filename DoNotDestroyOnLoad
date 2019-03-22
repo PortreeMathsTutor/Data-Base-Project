@@ -1,0 +1,12 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class DoNotDestroyOnLoad : MonoBehaviour
+{
+    // I put this on the canvas in scene 1
+    void Start()
+    {
+        GameObject.DontDestroyOnLoad(gameObject);
+    }
+}
