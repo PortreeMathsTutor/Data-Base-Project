@@ -1,0 +1,16 @@
+using UnityEngine;
+
+// I put this on an empty game object in scene 2
+// I called the empty game object
+//DoNotDestroyScore- AndPlayernameTracker
+public class ScoreAndPlayername : MonoBehaviour
+{
+    public int score; 
+    public string playerName = "John"; 
+void Start()
+    {
+
+        score = ScorePoints.score; // We need to acces the score value that is stored in a different script.
+
+}
+}
