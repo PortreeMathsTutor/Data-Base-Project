@@ -1,0 +1,43 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+// I put this on the canvas in scene 1
+
+public class Timer : MonoBehaviour
+{
+    //public bool changeScene = true;
+    public float setTimer;
+    private float time;
+    public int y = 0;
+
+        void Start()
+       {
+            y = SceneManager.GetActiveScene().buildIndex;
+            if (y== 0)
+            { time = setTimer; }
+        }
+
+        // Update is called once per frame
+        void Update()
+        { y = SceneManager.GetActiveScene().buildIndex;
+        if (y != 0)
+        { time = setTimer; }    
+   if (y == 0)
+        {
+            if (time >= 0)
+            {
+                time = time - 1;
+                Debug.Log("this is scene 0 timer is more than zero  and =" + time);
+            }
+            if (time < 0)
+            {
+                SceneManager.LoadScene(1);
+                Debug.Log("this is scene 1 timer is less than zero  and =" + time);
+            }
+           
+        }
+      
+    }
+}
