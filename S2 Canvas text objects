@@ -1,0 +1,7 @@
+Create gameobject UI/Panel with UI/Text objects named 
+OnlineHighscore and OnlineScores 
+parented to it, 
+then create two gameobjects UI/Text 
+named Highscore and Player-name
+parented to the same Canvas as the Panel 
+finally create gameobject UI/Input field named PlayerNameInputfield also parent this to the canvas 
