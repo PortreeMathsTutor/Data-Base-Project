@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "id9021970_username";
-$password = "tryagain";
+$password = "       ";
 $dbName = "id9021970_highscores";
 // Send variables for the MySQL database class.
 $conn = new mysqli($servername , $username, $password,
